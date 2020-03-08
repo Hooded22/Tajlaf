@@ -429,6 +429,19 @@ hr
 	cursor: pointer;
 }
 
+#introSection_poster .contentBox ul
+{
+	display: block;
+	height: auto;
+	opacity: 1;
+	transition: all 0.4s ease-in-out;
+}
+
+#introSection_poster .contentBox ul.hide
+{
+	height: 0;
+}
+
 #introSection_poster .contentBox ul.acitive
 {
 	display: block;
