@@ -305,129 +305,193 @@ hr
 	padding:0;
 }
 
-#poster
+#introSection_poster
 {
-	float:right;
 	width:70%;
-	border:1px solid #650000;
-	height:429px;
+	height:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	border: 2px solid #650000;
+	box-sizing: border-box;
 	
 }
 
-#poster > p
+#introSection_poster .Header
 {
-	padding:0;
-	background-color:#650000;
-	width:100%;
-	height:35px;
-	margin:0;
-	margin-top:-6px;
-	text-align:center;
-	font-family:Arial;
-	font-size:14px;
+	background-color: #650000;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 	
 }
 
-#poster .Glowny_akapit
+#introSection_poster .Header h1
 {
-	font-size:26px;
+	text-align: center;
 	margin:0;
-	height:40px;
-	padding:15px 0;
-	display:block;
+	padding: 20px 0;
 }
 
-#poster > #Guziki
+#introSection_poster .Buttons
 {
-	height:23px;
-	font-size:14px;
+	font-size:1.2em;
 	background-color:white;
 	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
 	
 }
 
-#poster > #Guziki > a
+#introSection_poster .Buttons div
 {
-	background-color:#FFFF;
-	width:100%;
-	height:120%;
-	color:black;
-	font-family:Arial;
-	padding-top:2px;
-	padding-bottom:10px;
-	padding-left:4px;
-	padding-right:4px;
-	
-	
+	display: inline-flex;
+	width: auto;
+	background-color: white;
+	color: black;
+}
+
+#introSection_poster .Buttons div.active
+{
+	background-color: #650000;
+	color: white;
+}
+
+#introSection_poster .Buttons div h2
+{
+	font-family: Calibri;
+	font-weight: 400;
+	padding: 3px 10px;
+	font-size: 1em;
+	margin: 0;
+	cursor: pointer;
+}
+
+#introSection_poster .Buttons div:not(.active):hover
+{
+	opacity: 0.5;
 }
 
 
-#poster > #Guziki > a:first-child
+#introSection_poster .ImageBox
 {
-	margin-right:10%;
-	margin-left:25%;
-	
-	
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#poster > #Guziki > a:hover
+#introSection_poster .ImageBox img
 {
-	background-color:#650000;
-	color:white;
-	text-decoration:none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
 
-#poster > span
+#introSection_poster .contentBox
 {
-
-	color:black;
-	font-family:Arial;
-	background-color:#cccccc;
-	display:block;
-	border:1px solid #650000;
-	margin-left:auto;
-	margin-right:auto;
+	width: 100%;
+	background-color: white;
 }
 
-#poster > span > li
+#introSection_poster .contentBox .Header
 {
-color:black;
-font-family:Arial;
-background-color:white;	
-text-align:left;
-list-style:none;
-font-size:13px;
-padding:2px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 0;
 }
 
-#reszta
+#introSection_poster .contentBox .Header h3
 {
-	margin-left:auto;
-	margin-right:auto;
+	font-size: 1em;
+	color: white;
+	font-family: Calibri;
+	margin: 0;
+	padding: 0;
+}
+
+#introSection_poster .contentBox .Header i
+{
+	color: white;
+	display: inline-flex;
+	margin-right: -30px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+#introSection_poster .contentBox ul.acitive
+{
+	display: block;
+}
+
+#introSection_poster .contentBox ul:not(.active)
+{
+	display: none;
+}
+
+#contentSection 
+{
 	width:100%;
 	height: auto;
 	margin:0;
 	padding:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
-#reszta .title
+#introSection
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#introSection div#introSection_left
+{
+	width: 70%;
+	display: inline-block;
+	min-height: 750px;
+}
+
+#introSection div#introSection_right
+{
+	width: 30%;
+	display: inline-block;
+	min-height: 750px;
+}
+
+#contentSection .title
 {
 	font-family:Arial;
 	font-size:30px;
 	font-weight:normal;
 	margin-bottom:30px;
 	width:100%;
-	margin-left:3%;
-
+	margin-left:5%;
 }
 
 .infoPage
 {
-	width: 100%;
 	margin: 0 auto;
 	height: auto;
 	margin-top: 30px;
-	padding-bottom: 20px;
+	padding: 20px 0px;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -436,15 +500,22 @@ padding:2px;
 	border-top: 1px solid #ccc;
 }
 
+
+
+#contentSection .infoPage
+{
+	width: 100%;
+}
+
 .infoPage_header
 {
-	margin-left: 30px;
+	margin-left: 20px;
 	width: 100%;
 }
 
 .infoPage_header h1
 {
-	margin-top:50px;
+	margin-top:30px;
 	margin-left: 0;
 	font-size: 2em;
 	font-family: Calibri;
@@ -453,6 +524,8 @@ padding:2px;
 .infoPage_body
 {
 	margin: 0 auto;
+	height: 100%;
+	display: inline-block;
 }
 
 .infoPage_body p
@@ -499,7 +572,7 @@ padding:2px;
 	height:300px;
 }
 
-#poster > a > img
+#introSection_poster > a > img
 {
 	height:300px;
 	width:100%;
@@ -508,7 +581,7 @@ padding:2px;
 	padding:0;
 	margin-bottom:-25px;
 }
-#poster > p > a
+#introSection_poster > p > a
 {
 	color:white;
 	background-image:url('../img/down.png');
@@ -523,7 +596,7 @@ padding:2px;
 	padding:0px 6px 0px 6px;
 }
 
-#poster > p > #funkcja1
+#introSection_poster > p > #funkcja1
 {
 	display:none;
 }
@@ -550,14 +623,15 @@ p
 	
 }
 
-
-#spis
+#tableOfContent
 {
-	height:auto;
-	width:150px;
 	background-color:black;
-	float:left;
-	margin-left:5%;
+	width: 25%;
+	padding-bottom: 10px;
+	margin-left: 5%;
+	display: block;
+	flex-direction: column;
+	align-items: center;
 	border-color:#650000;
 	color:white;
 	border-style:solid;
@@ -566,13 +640,34 @@ p
 	
 }
 
-#spis > ol
+#tableOfContent button
 {
-text-align:left;
-width:200px;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	border: none;
+	height: auto;
 }
 
-#spis > h3 > #pierwszy , #drugi
+#tableOfContent button p
+{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #1a6fcc;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#tableOfContent ol
+{
+	text-align:left;
+	margin: 0;
+	display: block;
+}
+
+#tableOfContent > h3 > #pierwszy , #drugi
 {
 	font-size:13px;
 	font-family:Calibri;
@@ -742,14 +837,14 @@ width:200px;
 		float:left;
 	}
 	
-	#right > #Guziki
+	#right > #Buttons
 	{
 		margin:0 auto;
 		text-align:center;
 		height:auto;
 	}
 	
-		#right > #Guziki > a
+		#right > #Buttons > a
 	{
 		font-size:1.5em;
 
