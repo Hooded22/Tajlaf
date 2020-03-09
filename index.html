@@ -125,9 +125,6 @@
 				</div>
 				<div id="tableOfContent">
 					<h3>Spis Treści</h3>
-					<button type = "button">
-						<p>POKAŻ</p>
-					</button>
 					<div>
 						<ol>
 							<li><a href="#one">Charakterystyka</a></li>
@@ -168,90 +165,16 @@
 					<div class = "contentBox">
 						<div class = "Header">
 							<h3>Informacje</h3>
-							<i class="fas fa-sort-down" id = "contentBox_arrow"></i>
+							<span id = "contentBox_arrow">-</span>
 						</div>
 						<ul class="active">
 							
 						</ul>
-						<!--<ul>
-							<li>Waga: Nieznany<br></li>
-							<li>Wzrost: Nieznany<br></li>
-							<li>Gatunek: Kotołak<br></li>
-							<li>Legowisko: Serniki<br></li>
-							<li>Pożywienie: Krew<br></li>
-							<li>Nazwa potoczna: Brak<br></li>
-							<li>Opiekun: Michalina T.<br></li>
-						</ul>-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-				<!--<div id="leftSide">
-					<div class="akapit">
-						<p>
-						<b>Tajjlaff van die Katze</b> – Znany również jako „Taja”, „Tajucha”, „Tundra”. Główny towarzysz i współlokator Michaliny Dominiki T. Wywodzący się z wyższego szczebla rodu <a href="https://pl.wikipedia.org/wiki/Brytyjczycy">Brytyjczyków</a> osobnik gatunku <a href="http://emargo.pl/potwor/1904/kotolak-tropiciel-23">Kotołaków</a>.
-						</p>
-					</div>
-					<br>
-					<div id="spis">
-					<h3>Spis treści <br>
-						<a id="pierwszy" style="cursor:default;" onclick="spis()">POKAŻ</a>
-						<a id="drugi" style="cursor:default;" onclick="spis()">UKRYJ</a>
-					</h3>
-					<ol id="spis_tresci" style="display:none;">
-						<li><a href="#one">Charakterystyka</a></li>
-						<li><a href="#two">Wystepowanie</a></li>
-						<li><a href="#three">Pożywienie i nawyki</a></li>
-						<li><a href="#four">Imię</a></li>
-						<li><a href="#fife">Ciekawostki</a></li>
-					</ol>
-					</div>
-					<div class="akapit">
-					<hr></hr>
-						<h1 class="title" id="one">Charakterystyka</h1>
-						<p>
-							Tajjlaff jest istota o neutralnym usposobieniu względem otoczenia. Jej głównym celem jest ochrona żywiciela, z którym żyje w ścisłej <a href="http://okropnepotwory.blogspot.com/2013/02/symbioza-potworow.html">symbiozie</a>. Posiada wyostrzone zmysły wzroku i słuchu oraz ponadprzeciętny spryt i zwinność nabyta w wyniku mutacji genetycznych. Główna bronią wspomnianej istoty są dwa rzędy 20 centymetrowych pazurów. Jako <a href="http://pl.harrypotter.wikia.com/wiki/Patronus">istota ochronna</a> większość swego zżycia spędza w obrębie niewielkiego terenu, w konsekwencji istnieje prawdopodobieństwo zaniku niektórych posiadanych w momencie urodzenia umiejętności m.in. orientacja w terenie i zmysł stadny. Aktualna <a href="https://www.mediaexpert.pl/wagi-lazienkowe/waga-mesko-ms-8137,id-234601?gclid=CjwKCAjw68zZBRAnEiwACw0eYZ2RyLZxTN1s-SyevIiBH1Vy0XjPunATpFDOQP1lmDUwAiWQZWt9VRoCSwEQAvD_BwE&gclsrc=aw.ds&dclid=CJO5nbSd9NsCFUqXGAodBmYCdA">waga</a> i wzrost nieznany.
-						</p>
-					</div>
-				</div>-->
-				<!--<div id="rightSide">
-					<div id="poster">
-						<p class="Glowny_akapit">Tajjlaff Van Die Katze</p>
-						<div id="Guziki">
-							<a  id="Kot" style="background-color:#650000; cursor:default; color:white; padding-top:4px; " onclick="Kot()">Kot</a>
-							<a  id="Kotolak" onclick="Kotolak()" style="cursor:default">Kotołak</a>
-						</div>
-						<a style="display:none;" href="../img/Tajjclaff.png" id="Tajjclaff">
-							<img src="../img/Tajjclaff.png">
-						</a>
-						<a style="display:block;" href="../img/Tajjlaff.png" id="Tajjlaff">
-							<img src="../img/Tajjlaff.png">
-						</a>
-						<p>Informacje 
-							<a id="funkcja" onclick="znikanieKot()"></a>
-							<a id="funkcja1" onclick="znikanieKotolak()" ></a>
-						</p>
-						<span id="znikanie">
-							<li>Waga: 8kg<br></li>
-							<li>Wzrost: 3/4 łóżka<br></li>
-							<li>Gatunek:  Brytyjczyk<br></li>
-							<li>Legowisko:  Serniki<br></li>
-							<li>Pożywienie: Royale<br></li>
-							<li>Nazwa potoczn: Taja<br></li>
-							<li>Opiekun: Michalina T.<br></li>
-						</span>
-						<span id="znikanie2" style="display:none;">
-							<li>Waga: Nieznany<br></li>
-							<li>Wzrost: Nieznany<br></li>
-							<li>Gatunek: Kotołak<br></li>
-							<li>Legowisko: Serniki<br></li>
-							<li>Pożywienie: Krew<br></li>
-							<li>Nazwa potoczna: Brak<br></li>
-							<li>Opiekun: Michalina T.<br></li>
-						</span>
-					</div>
-				</div>-->
 	<section>
 		<div id="contentSection" style = "clear: both;">
 			<div class = "infoPage">
@@ -304,6 +227,39 @@
 			</div>
 		</div>
 	</section>
+	<footer>	
+		<div id="footer">
+			<div class = "ImageBox">
+				<img src="./img/Fundom.png">
+			</div>
+			<div class="lastPost">
+				<p>
+					Powyższa strona powstala w celach humorystyczno treningowych  na podstawie <a href="http://wiedzmin.wikia.com/wiki/Oficjalna_Wied%C5%BAmin_Wiki">WiedzminWiki.pl</a> dzieki inspiracji zaczerpnietej z postaci Kotki imieniem Taja.
+					(Serdeczne pozdrowienia dla Właścicielki wspomnianej Kociczki).
+				</p>
+				<div class = "socialMedia">
+					<div>
+						<a href = "https://www.facebook.com/przemek.sipta">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</div>
+					<div>
+						<a href = "https://www.linkedin.com/in/przemys%C5%82aw-sipta-889526187/">
+							<i class="fab fa-github-square"></i>
+						</a>
+					</div>
+					<div>
+						<a href = "https://github.com/Hooded22">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+				<p>
+					PSEUDO WIKI made by Przemek Sipta 2020
+				</p>
+			</div>
+		</div>
+	</footer>	
 </div>
 </main>
 <script src="Skrypty\Facebook.js"></script>

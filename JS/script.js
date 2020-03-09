@@ -48,12 +48,14 @@ class InfoBoxController{
         this.generateContent = this.generateContent.bind(this);
         this.hideAndShow = this.hideAndShow.bind(this);
         this.infoBoxHidden = false;
+        this.changeArrow = this.changeArrow.bind(this);
     }
 
     hideAndShow = () => {
         const infoBox = this.posterDiv.getElementsByClassName('contentBox')[0].getElementsByTagName('ul');
         const newClass = this.infoBoxHidden ? "active" : "hide";
         this.infoBoxHidden = !this.infoBoxHidden;
+        this.changeArrow()
         Object.keys(infoBox).map(key => {
             infoBox[key].setAttribute("class",newClass);
         })
@@ -73,6 +75,13 @@ class InfoBoxController{
                 content[0].appendChild(node);
             })
         });
+    }
+
+    changeArrow = () => {
+        console.log(this.infoBoxHidden);
+        const innerContent = this.infoBoxHidden ? "+" : "-";
+        const arrow = document.getElementById("contentBox_arrow");
+        arrow.innerHTML = innerContent;
     }
 
 }
