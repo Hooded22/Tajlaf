@@ -10,6 +10,7 @@ html, body
 	Background-size: cover;
 	line-height:25px;
 	overflow-x:hidden;
+	font-size: 16px;
 }
 
 a
@@ -18,21 +19,9 @@ a
 	text-decoration:none;
 }
 
-#losowane
-{
-	 color:#FFF;
-	 font-family:Arial;
-	 text-decoration:none
-}
-
-#losowane:hover
-{
-	color:#09c;
-}
-
 a:hover
 {
-text-decoration:underline;	
+	text-decoration:underline;	
 }
 
 #board
@@ -51,102 +40,59 @@ text-decoration:underline;
 {
 	background-color:#1b2b4c;
 	width:80%;
-	height:16.5vh;
+	height: auto;
 	background-image:url('../img/Naglowek3.png');
 	background-repeat:no-repeat;
 	background-position:right center;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#header > img
+#header header
 {
-	height:10vh;
-	width:8vw;
-	float:left;
-	margin-top:2%;
-	margin-left:2%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
-#header > p
+#header #logo
 {
-float:left;
-width:60%;
-text-align:left;
-font-size:30px;
-font-family:Castellar;
-margin-top:3%;
-margin-bottom:1%;
-word-spacing:10px;
-letter-spacing:8px;
-
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	padding: 20px;
 }
 
-#header > div
+#header #logo img
 {
-	margin:0;
-	padding:0;
-	width:30%;
-	height:70px;
-	float:right;
-	margin-right:2%;
-	margin-top:-6%;
+	width: 12vh;
+	height: 10vh;
 }
 
-#header > div > span
+#header #logo h1
 {
-	padding-top:10px;
-	padding-bottom:10px;
-	display:block;
-	text-align:right;
-	font-family:Arial;
-	font-size:12px;
-	float:left;
-	margin-left:10%;
-	color:#FFF;
+	font-family: "Castellar";
+	letter-spacing:10px;
+	font-size: 2.3em;
+	color: #fff;
+	font-weight: inherit;
+	margin-left: 30px;
 }
 
-#header > div > span > span
+#header #pageCount h2
 {
-	font-size:20px;
+	color: #fff;
+	font-size: 1.5;
+	text-align: center;
+	font-weight: inherit;
 }
 
-.button
-{
-	float:right;
-	display:block;
-	margin-top:5%;
-	margin-right:10%;
-	padding-top:5px;
-	padding-bottom:7px;
-	width:50%;
-	height:30%;
-	color:#FFF;
-	font-size:13px;
-	font-family:Arial;
-	border:1px solid #FFF;
-	background-image:url('../img/Tlo_guzika_1.png');
-	background-color:none;
-	text-align:center;
-	z-index:5;
-	
-}
-
-.button > img
-{
-	width:10%;
-	height:100%;
-	float:left;
-}
-
-.button > a
-{
-	color:#FFF;
-	font-size:13px;
-	font-family:Arial;
-	text-decoration:none;
-}
 
 #naglowek
 {
@@ -164,147 +110,104 @@ letter-spacing:8px;
 	color:#d5d4d4;
 }
 
-.bt
+#pageHeader
 {
-	display:block;
-	padding-top:5px;
-	padding-left:0;
-	padding-right:0;
-	width:30%;
-	border:1px solid #FFF;
-	background-image:url('../img/Tlo_guzika_1.png');
-	background-color:none;
-	text-align:center;
-	z-index:5;
-	text-decoration:none;
-	float:left;
-	margin-right:2%;
-	color:#ffffff;
-	font-size:12px;
-	font-family:Arial;
-	
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 30px auto;
+	min-height: 200px;
 }
 
-#bt1
+#pageHeader .pageHeader_column
 {
-	display:block;
-	padding-top:5px;
-	padding-bottom:2px;
-	padding-left:0;
-	padding-right:0;
-	width:30%;
-	border:1px solid #1a2b4c;
-	background-color:#1a2b4c;
-	background-image:url('../img/pen.png');
-	background-repeat:no-repeat;
-	background-position:10px 10px;
-	text-align:center;
-	z-index:5;
-	text-decoration:none;
-	float:left;
-	margin-right:2%;
-	color:#ffffff;
-	
+	width: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#pageHeader .pageHeader_column h1
+{
+	font-size: 3em;
+	font-family: Calibri;
+	color: white;
+	margin: 0;
+	padding: 40px;
+}
+
+#pageHeader .pageHeader_column .Buttons
+{
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+#pageHeader .pageHeader_column .Buttons a
+{
+	color: white;
+}
+
+#pageHeader .Buttons .button
+{
+	width: 30%;
+	margin: 0;
+	padding: 5px 0;
+	background-color: #1b2b4c;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+#pageHeader .Buttons .button div
+{
+	display: flex;
+}
+
+#pageHeader .Buttons .button:first-child
+{
+	background-color: transparent;
+}
+
+#pageHeader .Buttons .button .leftIcon
+{
+	height: 100%;
+	display: inline-block;
+	margin-left: -15%;
+	margin-right: 15%;
+}
+
+#pageHeader .Buttons .button i
+{
+	font-size: 1.7rem;
+	display: inline-block;
+	color: white;
+}
+
+#pageHeader .Buttons .button h2
+{
+	font-size: inherit;
+	line-height: 30px;
+	font-weight: 400;
+	padding: 0px;
+	margin: 0;
+	color: #fff;
+	font-family: Calibri;
 }
 
 
- .bt:hover
- {
-	color:#cccccc; 
-	border-color:#cccccc;
-	cursor:pointer;
-	text-decoration:none;
- }
- 
- #bt1:hover
- { 
-	cursor:pointer;
-	background-color:#345696;
- }
 
-#buttons
-{
-	width:40%;
-	color:#ffffff;
-	font-size:12px;
-	font-family:Arial;
-}
-
-h1
-{
-	color:#d5d4d4;
-	float:left;
-	margin-left:5%;
-}
-
-.title
-{
-	font-family:Arial;
-	font-size:30px;
-	font-weight:normal;
-	margin-bottom:30px;
-	width:100%;
-	margin-left:3%;
-}
-
-hr
-{
-	width:100%;
-	background-color:#404045;
-	border-color:#404045;
-	margin-top:10px;
-	margin-bottom:10px;
-	
-}
-
-#buttons
-{
-
-	float:right;
-	margin-top:5%;
-	margin-right:5%;
-	
-}
-
-#pierwsza
-{
-	margin-left:auto;
-	margin-right:auto;
-	width:100%;
-	margin-top:40px;
-	height:630px;
-}
-
-#leftSide
-{
-	float:left;
-	width:60%;
-	height:630px;
-}
-
-.akapit
-{
-	margin:0;
-	width:110%;
-}
-
-.akapit  p
-{
-	color:white;
-	text-align:left;
-	font-size:18px;
-	font-family:Calibri;
-}
-
-#rightSide
-{
-	float:left;
-	height:640px;
-	width:34%;
-	margin-left:5%;
-	position:relative;
-	padding:0;
-}
 
 #introSection_poster
 {
@@ -334,11 +237,11 @@ hr
 	text-align: center;
 	margin:0;
 	padding: 20px 0;
+	color: #fff;
 }
 
 #introSection_poster .Buttons
 {
-	font-size:1.2em;
 	background-color:white;
 	width:100%;
 	display: flex;
@@ -367,7 +270,7 @@ hr
 	font-family: Calibri;
 	font-weight: 400;
 	padding: 3px 10px;
-	font-size: 1em;
+	font-size: 1rem;
 	margin: 0;
 	cursor: pointer;
 }
@@ -414,7 +317,7 @@ hr
 
 #introSection_poster .contentBox .Header h3
 {
-	font-size: 1em;
+	font-size: 1rem;
 	color: white;
 	font-family: Calibri;
 	margin: 0;
@@ -428,7 +331,7 @@ hr
 	margin-right: -30px;
 	margin-left: 30px;
 	cursor: pointer;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	font-weight: bolder;
 }
 
@@ -453,18 +356,6 @@ hr
 #introSection_poster .contentBox ul:not(.active)
 {
 	display: none;
-}
-
-#contentSection 
-{
-	width:100%;
-	height: auto;
-	margin:0;
-	padding:0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 }
 
 #introSection
@@ -495,11 +386,23 @@ hr
 #contentSection .title
 {
 	font-family:Arial;
-	font-size:30px;
+	font-size:2em;
 	font-weight:normal;
 	margin-bottom:30px;
 	width:100%;
 	margin-left:5%;
+}
+
+#contentSection 
+{
+	width:100%;
+	height: auto;
+	margin:0;
+	padding:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .infoPage
@@ -515,8 +418,6 @@ hr
 	align-items: center;
 	border-top: 1px solid #ccc;
 }
-
-
 
 #contentSection .infoPage
 {
@@ -552,69 +453,9 @@ hr
 	margin: 0 auto;
 }
 
-.rest
+.infoPage_body li
 {
-	margin-left:auto;
-	margin-right:auto;
-	width:100%;
-	position:relative;
-	height:200px;
-	margin-top:20px;
-	margin-bottom:10px;
-}
-
-.pojemnik
-{
-	color:white;
-	text-align:left;
-	font-size:18px;
-	font-family:Calibri;
-	
-	
-}
-
-.pismo
-{
-	width:94%;
-	margin:0;
-	text-align:justify;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
-#Ciekawostki
-{
-	height:300px;
-}
-
-#introSection_poster > a > img
-{
-	height:300px;
-	width:100%;
-	margin-left:5%;
-	margin:0%;
-	padding:0;
-	margin-bottom:-25px;
-}
-#introSection_poster > p > a
-{
-	color:white;
-	background-image:url('../img/down.png');
-	background-repeat:no-repeat;
-	display:block;
-	height:20px;
-	width:20px;
-	float:right;
-	margin-top:7%;
-	margin-left:-8%;
-	margin-right:8%;
-	padding:0px 6px 0px 6px;
-}
-
-#introSection_poster > p > #funkcja1
-{
-	display:none;
+	padding: 10px;
 }
 
 p
@@ -623,20 +464,8 @@ p
 	text-align:left;
 	width:100%;
 	margin-left:5%;
-	font-size:18px;
+	font-size:inherit;
 	font-family:Calibri;
-}
-
-
-.akapit > li
-{
-	color:white;
-	text-align:left;
-	width:100%;
-	margin-left:5%;
-	font-size:18px;
-	font-family:Calibri;
-	
 }
 
 #tableOfContent
@@ -665,41 +494,11 @@ p
 	height: auto;
 }
 
-#tableOfContent button p
-{
-	padding: 0;
-	margin: 0;
-	margin-bottom: 20px;
-	font-size: 1em;
-	color: #1a6fcc;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
 #tableOfContent ol
 {
 	text-align:left;
 	margin: 0;
 	display: block;
-}
-
-#tableOfContent > h3 > #pierwszy , #drugi
-{
-	font-size:13px;
-	font-family:Calibri;
-	margin:0;
-	padding:0;
-	
-}
-
-#drugi
-{
-	display:none;
-}
-
-#pierwszy:hover , #drugi:hover
-{
-	text-decoration:underline;
 }
 
 #footer
@@ -744,7 +543,7 @@ p
 	width: 60%;
 	color:#E8E8E8;
 	font-family: 'Roboto Mono', monospace;
-	font-size:0.8em;
+	font-size:inherit;
 	text-align:justify;
 	margin-left: 0;
 	margin-right: 0;
@@ -770,7 +569,7 @@ p
 #footer .socialMedia i
 {
 	color: white;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 
@@ -783,11 +582,22 @@ p
 
 @media screen and (max-width: 1200px)
 {
-	#introSection
+
+	body
+	{
+		font-size: 10px;
+	}
+
+	#introSection, #pageHeader
 	{
 		flex-direction: column;
 	}
-	#introSection div#introSection_left
+	#introSection div#introSection_left, #pageHeader .pageHeader_column
+	{
+		width: 100%;
+	}
+
+	#pageHeader .pageHeader_column .Buttons
 	{
 		width: 100%;
 	}
@@ -812,41 +622,4 @@ p
 	}
 }
 
-@media screen and (max-width: 750px)
-{
-	
 
-	#header > .head
-	{
-		padding-top:30px;
-		padding-bottom:30px;
-		font-size:220%;
-		width:70%;
-	}
-	
-	#header > img
-	{
-		padding-top:30px;
-		padding-bottom:30px;
-	}
-	
-	#naglowek
-	{
-		text-align:center;
-	}
-	
-	#naglowek > h1
-	{
-		width:100%;
-		text-align:center;
-		padding-bottom:5px;
-		padding-top:5px;
-	}
-	
-	#buttons
-	{
-		display:none;
-		
-	}
-	
-}

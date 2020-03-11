@@ -8,111 +8,129 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b6906e7fd3.js" crossorigin="anonymous"></script>
 </head>
-<body onload="losuj()">
+<body">
 <main>
 <div id="container">
 <header>
 	<div id="header">
-		<img src="./img/W3_SS_Medalion_szkoły_Kota.png">
-			<p class="head">Pseudo Wiki</p>
-				<div>
-				<span><span>15082015</span><br>STRON</span>
-				<div class="button"><img src="./img/Logo_dodaj.jpg"></img><a href="#">DODAJ NOWA STRONE</a></div>
-				</div>
-			<nav>
-				<ol id="menu">
-					<li class="dol" style="background-position:13.5vw center;"><a href="#">Społeczności</a>
-						<ul>
-							<li><a href="Trwa.html">Administracja</a></li>
-							<li><a href="Trwa.html">O nas</a></li>
-							<li><a href="#" class="prawo">Discord</a>
-								<ol>
-									<li><a href="#">Zaproszenie</a></li>
-								</ol>
-							</li>
-							<li><a id="wynik"></a></li>
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#" class="prawo">Historia</a>
-								<ol style="margin-top:-9.3em; width:120%;">
-									<li><a  href="#">Kronika</a></li>
-									<li><a href="Trwa.html">Oś czasu</a></li>
-									<li><a href="Trwa.html">Stara administracja</a></li>
-								</ol>
-							</li>
-						</ul>
-					</li>
-					<li class="dol"><a href="#">Dzieła</a>
-						<ul style="width:140px;">
-							<li><a href="#" class="prawo">Książki</a>
-								<ol style="width:150%;">
-									<li><a href="Trwa.html">Ostatnia prośba</a></li>
-									<li><a href="Trwa.html">Kot przeznaczenia</a></li>
-									<li><a href="Trwa.html">Krew ludzi</a></li>
-									<li><a href="Trwa.html">Czas leci</a></li>
-									<li><a href="Trwa.html">Chrzest w Jordanie</a></li>
-									<li><a href="Trwa.html">Wieżą Kukułki</a></li>
-									<li><a href="Trwa.html">Panowie z jeziora(18+)</a></li>
-									<li><a href="Trwa.html">Sklepy Burzy</a></li>
-								</ol>
-							</li>
-							<li><a href="#" class="prawo">Gry</a>
-								<ol>
-									<li><a href="Wisielec\Wisielec.html">Wisielec</a></li>
-									<li><a href="Memory\Main Page\Memory_index.html">Memory</a></li>
-									<li><a href="Trwa.html">Podchody</a></li>
-									<li><a href="Trwa.html">Mafia</a></li>
-									<li><a href="Trwa.html">Palny</a></li>
-								</ol>
-							</li>
-							<li><a href="#" class="prawo">Filmy</a>
-								<ol style="width:150%;">
-									<li><a href="Trwa.html">Matka Dzieci Neo</a></li>
-									<li><a href="Trwa.html">Ocal Życie Bezbronnemu</a></li>
-									<li><a href="Trwa.html">Grupa Filmowa Downy</a></li>
-								</ol>
-							</li>
-						</ul>
-					</li>
-					<li class="dol"><a href="#">Pomoc</a>
-						<ul style="width:190px;">
-							<li><a href="#">Regulamin</a></li>
-							<li><a href="#">Poradnik edycyjny</a></li>
-							<li><a href="#">Polityka grafik</a></li>
-							<li><a href="#">Przewodnik układu</a></li>
-							<li><a href="#">Raporty</a></li>
-						</ul>
-					</li>
-					<li class="dol" style="background-position:12vw center;"><a href="#">Polecane</a>
-						<ul style="width:140px;">
-							<li><a href="#" class="prawo">Inne</a>
-								<ol style="width:120%;">
-									<li><a href="Trwa.html">New Village Wiki</a></li>
-									<li><a href="http://lalabaj.com.pl/">LalaBaj</a></li>
-									<li><a href="https://pl.oriflame.com/">Oriflame</a></li>
-								</ol>
-							</li>
-							<li><a href="#" class="prawo">Już wkrótce</a>
-								<ol style="width:100%;">
-									<li><a href="Trwa.html">Friendy</a></li>
-									<li><a href="Trwa.html">You Will See</a></li>
-								</ol>
-							</li>
-						</ul>
-					</li>
-				</ol>
-			</nav>
+		<header>
+			<div id = "logo">
+				<img src="./img/W3_SS_Medalion_szkoły_Kota.png">
+				<h1>Pseudo Wiki</h1>
+			</div>
+			<div id = "pageCount">
+				<h2>15082015 stron</h2>
+			</div>
+		</header>
+		<nav>
+			<ol id="menu">
+				<li><a href="#">Społeczności</a> <i class="fas fa-sort-down"></i>
+					<ul>
+						<li><a href="Trwa.html">Administracja</a></li>
+						<li><a href="Trwa.html">O nas</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Historia</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="#">Kronika</a></li>
+								<li><a href="Trwa.html">Oś czasu</a></li>
+								<li><a href="Trwa.html">Stara administracja</a></li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Dzieła</a><i class="fas fa-sort-down"></i>
+					<ul>
+						<li><a href="#">Książki</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="Trwa.html">Ostatnia prośba</a></li>
+								<li><a href="Trwa.html">Kot przeznaczenia</a></li>
+								<li><a href="Trwa.html">Krew ludzi</a></li>
+								<li><a href="Trwa.html">Czas leci</a></li>
+								<li><a href="Trwa.html">Chrzest w Jordanie</a></li>
+								<li><a href="Trwa.html">Wieżą Kukułki</a></li>
+								<li><a href="Trwa.html">Panowie z jeziora(18+)</a></li>
+								<li><a href="Trwa.html">Sklepy Burzy</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Gry</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="Wisielec\Wisielec.html">Wisielec</a></li>
+								<li><a href="Memory\Main Page\Memory_index.html">Memory</a></li>
+								<li><a href="Trwa.html">Podchody</a></li>
+								<li><a href="Trwa.html">Mafia</a></li>
+								<li><a href="Trwa.html">Palny</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Filmy</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="Trwa.html">Matka Dzieci Neo</a></li>
+								<li><a href="Trwa.html">Ocal Życie Bezbronnemu</a></li>
+								<li><a href="Trwa.html">Grupa Filmowa Downy</a></li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Pomoc</a><i class="fas fa-sort-down"></i>
+					<ul>
+						<li><a href="#">Regulamin</a></li>
+						<li><a href="#">Poradnik edycyjny</a></li>
+						<li><a href="#">Polityka grafik</a></li>
+						<li><a href="#">Przewodnik układu</a></li>
+						<li><a href="#">Raporty</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Polecane</a><i class="fas fa-sort-down"></i>
+					<ul>
+						<li><a href="#">Inne</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="Trwa.html">New Village Wiki</a></li>
+								<li><a href="http://lalabaj.com.pl/">LalaBaj</a></li>
+								<li><a href="https://pl.oriflame.com/">Oriflame</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Już wkrótce</a><i class="fas fa-caret-right"></i>
+							<ol>
+								<li><a href="Trwa.html">Friendy</a></li>
+								<li><a href="Trwa.html">You Will See</a></li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</nav>
 	</div>
 </header>
 <section>
 <div id="board">
-	<div id="naglowek">
-		<h1>Tajjlaff van die <br>Katze</h2>
-		<div id="buttons">
-			<a onclick="dymek" id="bt1">EDYTUJ</a>
-			<a onclick="dymek" class="bt">KOMENTAZRE</a>
-			<a onclick="dymek" class="bt">UDOSTĘPNIJ</a>
+	<head>
+		<div id = "pageHeader">
+			<div class = "pageHeader_column">
+				<h1>Tajjlaff van die Katze</h1>
+			</div>
+			<div class = "pageHeader_column">
+				<div class = "Buttons">
+					<a class = "button" href = "https://github.com/Hooded22">
+						<div>
+							<div class = "leftIcon">
+								<i class="fab fa-github"></i>
+							</div>
+							<h2>GitHub</h2>
+						</div>
+					</a>
+					<a class = "button" href = "https://www.linkedin.com/in/przemys%C5%82aw-sipta-889526187/">
+						<div>
+							<h2>Facebook</h2>
+						</div>
+					</a>
+					<a class = "button" href = "https://www.facebook.com/przemek.sipta">
+						<div>
+							<h2>LinkedIn</h2>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
+	</head>
 	<section>
 		<div id = "introSection">
 			<div id = "introSection_left">
@@ -219,10 +237,18 @@
 					<h1>Ciekawostki</h1>
 				</div>
 				<div class="infoPage_body">
-					<p>
-						<li class="pismo">Wedlug niedawno odnalezionego tajemniczego manuskryptu dowadiujemy sie zupełnie nieznanych do tej pory informacji na temat Tajjlaffa. Wspomniany fragment dosłownie głosi że: <span style="	color:#cccccc;"><i>„Tajucha zajmuje ¾ łózka”</i></span>. Do tej pory nie udało się rozszyfrować treści dosłownej komunikatu. Istnieją iż może byc on w przyszłości źródłem wiedzy na temat gabarytów Tajjlaffa.</li><br>
-							<li class="pismo">Tajjlaff mimo iż jest wyjątkowo niebezpieczna potrafi być niezwykle spokojna wręcz potulna wobez obranego przez siebie typu ludzi. Wciąż nie wiadomo na jakiej podstawie kategoryzuje wspomnianą grupe.</li>
-					</p>
+					<ul>
+						<li>
+							<p>
+								Wedlug niedawno odnalezionego tajemniczego manuskryptu dowadiujemy sie zupełnie nieznanych do tej pory informacji na temat Tajjlaffa. Wspomniany fragment dosłownie głosi że: <i>„Tajucha zajmuje ¾ łózka”</i>. Do tej pory nie udało się rozszyfrować treści dosłownej komunikatu. Istnieją iż może byc on w przyszłości źródłem wiedzy na temat gabarytów Tajjlaffa.
+							</p>
+						</li>
+						<li>
+							<p>
+								Tajjlaff mimo iż jest wyjątkowo niebezpieczna potrafi być niezwykle spokojna wręcz potulna wobez obranego przez siebie typu ludzi. Wciąż nie wiadomo na jakiej podstawie kategoryzuje wspomnianą grupe.
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
