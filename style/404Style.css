@@ -1,0 +1,57 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    overflow-x: hidden;
+    background: #101016;
+    font-size: 16px;
+}
+
+#container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#block404
+{
+    width: 80%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#block404 .imageBox img
+{
+    width: 20vh;
+    height: 20vh;
+    display: block;
+}
+
+#block404 h1
+{
+    font-family: "Castellar";
+    text-transform: lowercase;
+    color: #eee;
+    font-weight: 400;
+}
+
+#block404 button
+{
+    background: #650000;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

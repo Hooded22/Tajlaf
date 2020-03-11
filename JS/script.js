@@ -64,7 +64,7 @@ class InfoBoxController{
     generateContent = (isCat) => {
         const content = this.posterDiv.getElementsByClassName('contentBox')[0].getElementsByTagName('ul');
         var catInfo;
-        $.getJSON("../JSON/catInfo.json", function(json) {
+        $.getJSON("../json/catInfo.json", function(json) {
             catInfo = json[isCat ? "Cat" : "Werecat"];
             content[0].innerHTML = "";
         }).then(() => {
