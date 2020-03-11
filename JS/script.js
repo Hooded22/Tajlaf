@@ -16,7 +16,7 @@ class ImageBoxController{
 
     changeImage = (name) => {
         const ImageBox = document.getElementsByClassName('ImageBox')[0].children;
-        const imageName = `../img/Tajlaf_${name}.png`;
+        const imageName = `./img/Tajlaf_${name}.png`;
         ImageBox[0].setAttribute("src",imageName);
     }
 
