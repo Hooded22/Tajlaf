@@ -8,9 +8,9 @@ This is a simple website which not require any special implementation
 
 ## Built With
 
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
 
 ## Authors
 
